@@ -1,0 +1,20 @@
+<head>
+  <title>share-test</title>
+</head>
+
+<body>
+  {{> example1}}
+  {{> example2}}
+</body>
+
+<template name="example1">
+  <button {{b "click: updateTime"}} type="button">Update time from example 1</button>
+
+  <p>Value of shared time in example 1: {{initialTime}}</p>
+</template>
+
+<template name="example2">
+  <button {{b "click: updateTime"}} type="button">Update time from example 2</button>
+
+  <p>Value of shared time in example 2: {{initialTime}}</p>
+</template>
